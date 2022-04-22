@@ -16,9 +16,9 @@ https://github.com/sandertyu/tome-ascii-borders
 ---Changelog---
 - v1.0.1 Initial release
 ]]
-tags = {'ascii', 'borders', 'tactical'}
+tags = {'ascii', 'borders', 'tactical', 'frame', 'outline'}
 
 overload = true
-superload = false
+superload = true
 data = false
 hooks = true
