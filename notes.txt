@@ -1,0 +1,6 @@
+1 option -> different ascii styles
+disable addon to use modern styles
+
+GameOptions.lua
+faster rre
+better rest/auto

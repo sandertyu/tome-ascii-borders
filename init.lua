@@ -21,4 +21,4 @@ tags = {'ascii', 'borders', 'tactical'}
 overload = true
 superload = false
 data = false
-hooks = false
+hooks = true
