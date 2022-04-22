@@ -7,3 +7,5 @@ better rest/auto
 
 game/engines/tome-engine/engine/Target.lua for target_cursor
 game/engines/tome-engine/engine/Map.lua and game/modules/tome-code/mod/load.lua for the rest ?
+
+cursor refreshes when go to main menu and return, maybe do that automatically?

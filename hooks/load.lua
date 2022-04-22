@@ -13,7 +13,7 @@ class:bindHook("GameOptions:generateList", function(self, data)
                         width = self.c_desc.w,
                         height = self.c_desc.h,
                         text = string.toTString[[Select which ascii border style you would like to use:
- - Default is exactly the default 32x32 ascii borders.
+ - Default is exactly the official 32x32 ascii borders.
  - Thick is a scaled and consistent 64x64 version of the default ascii borders.
  - Thin is the same as the default ascii borders except in a 64x64 size.]]
                 }
