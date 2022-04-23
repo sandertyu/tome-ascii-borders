@@ -1,0 +1,3 @@
+upon VERY FIRST INSTALL, the borders within Map.lua will not load until an option is manually selected.
+even after uninstalling t-engine, this issue does not occur again and it works flawlessly.
+
