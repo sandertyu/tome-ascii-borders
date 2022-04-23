@@ -1,7 +1,7 @@
 local _M = loadPrevious(...)
 
 -- superloaded code
-local style = config.settings.tome.ascii_border_style
+local style = config.settings.tome.ascii_border_style or "thick"
 
 if style == "official" then
         _M.faction_friend = "tactical_friend_official.png"

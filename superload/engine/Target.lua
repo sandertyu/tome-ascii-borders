@@ -10,7 +10,7 @@ function _M:init(map, source_actor)
         local retval = base_init(self, map, source_actor)
         
         -- superloaded code
-        local style = config.settings.tome.ascii_border_style
+        local style = config.settings.tome.ascii_border_style or "thick"
 
         if style == "official" then
                 self.cursor = engine.Tiles:loadImage("target_cursor_official.png"):glTexture()
