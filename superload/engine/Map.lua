@@ -27,4 +27,5 @@ if style == "thin" then
         _M.faction_powerful = "tactical_powerful_thin.png"
         _M.faction_self = "tactical_self_thin.png"
 end
+
 return _M

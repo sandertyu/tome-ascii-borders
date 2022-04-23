@@ -22,7 +22,7 @@ class:bindHook("ToME:load", function(self, data)
         end
 end)
 
--- Ascii border style menu option
+-- ASCII border style menu option
 class:bindHook("GameOptions:generateList", function(self, data)
         if data.kind == "ui" then
                 local zone = Textzone.new{
@@ -36,13 +36,13 @@ class:bindHook("GameOptions:generateList", function(self, data)
                 }
                 data.list[#data.list+1] = {
                         zone = zone,
-                        name = string.toTString"#GOLD##{bold}#Ascii Border Style#WHITE##{normal}#",
+                        name = string.toTString"#GOLD##{bold}#ASCII Border Style#WHITE##{normal}#",
                         status = function(item)
                                 return tostring(config.settings.tome.ascii_border_style):capitalize()
                         end,
                         fct = function(item)
                                 local list = {{name="Official", style="official"}, {name="Thick", style="thick"}, {name="Thin", style="thin"}}
-                                engine.ui.Dialog:listPopup("Ascii border style", "Select style", list, 300, 200, function(sel)
+                                engine.ui.Dialog:listPopup("ASCII Border Style", "Select style", list, 300, 200, function(sel)
                                         if not sel or not sel.style then return end
                                         config.settings.tome.ascii_border_style = sel.style
                                         game:saveSettings("tome.ascii_border_style", ("tome.ascii_border_style = %q\n"):format(config.settings.tome.ascii_border_style))
