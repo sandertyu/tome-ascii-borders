@@ -1,3 +1,2 @@
-upon VERY FIRST INSTALL, the borders within Map.lua will not load until an option is manually selected.
-even after uninstalling t-engine, this issue does not occur again and it works flawlessly.
-
+upon first install, no borders will load except those for the boss (like that in paradox plane) and the target_cursor. Must remove files in .t-engine directory to replicate
+once an option is chosen and you return to the main menu, the borders will work properly
