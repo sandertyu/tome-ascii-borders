@@ -6,7 +6,7 @@ local Map = require "engine.Map"
 class:bindHook("ToME:load", function(self, data)
         config.settings.tome.ascii_border_style = config.settings.tome.ascii_border_style or "thick"
 
-        local style = config.settings.tome.ascii_border_style
+        local style = config.settings.tome.ascii_border_style or "thick"
 
         if style == "official" then
                 Map.faction_danger2 = "tactical_danger_official.png"
