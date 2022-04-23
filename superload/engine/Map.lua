@@ -3,13 +3,13 @@ local _M = loadPrevious(...)
 -- superloaded code
 local style = config.settings.tome.ascii_border_style
 
-if style == "default" then
-        _M.faction_friend = "tactical_friend_default.png"
-        _M.faction_neutral = "tactical_neutral_default.png"
-        _M.faction_enemy = "tactical_enemy_default.png"
-        _M.faction_danger = "tactical_danger_default.png"
-        _M.faction_powerful = "tactical_powerful_default.png"
-        _M.faction_self = "tactical_self_default.png"
+if style == "official" then
+        _M.faction_friend = "tactical_friend_official.png"
+        _M.faction_neutral = "tactical_neutral_official.png"
+        _M.faction_enemy = "tactical_enemy_official.png"
+        _M.faction_danger = "tactical_danger_official.png"
+        _M.faction_powerful = "tactical_powerful_official.png"
+        _M.faction_self = "tactical_self_official.png"
 end
 if style == "thick" then
         _M.faction_friend = "tactical_friend_thick.png"

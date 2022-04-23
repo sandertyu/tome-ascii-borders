@@ -8,9 +8,9 @@ class:bindHook("ToME:load", function(self, data)
 
         local style = config.settings.tome.ascii_border_style
 
-        if style == "default" then
-                Map.faction_danger2 = "tactical_danger_default.png"
-                Map.faction_danger1 = "tactical_enemy_strong_default.png"
+        if style == "official" then
+                Map.faction_danger2 = "tactical_danger_official.png"
+                Map.faction_danger1 = "tactical_enemy_strong_official.png"
         end
         if style == "thick" then
                 Map.faction_danger2 = "tactical_danger_thick.png"
@@ -29,9 +29,10 @@ class:bindHook("GameOptions:generateList", function(self, data)
                         width = self.c_desc.w,
                         height = self.c_desc.h,
                         text = string.toTString[[Select which ascii border style you would like to use:
- - Default is exactly the official 32x32 ascii borders.
- - Thick is a scaled and consistent 64x64 version of the default ascii borders.
- - Thin is the same as the default ascii borders except in a 64x64 size.]]
+ - Official is exactly the default 32x32 ascii borders.
+ - Thick is a scaled and consistent 64x64 version of the official ascii borders.
+ - Thin is the official ascii borders except in a 64x64 size.
+#LIGHT_RED#This will take effect on next restart.]]
                 }
                 data.list[#data.list+1] = {
                         zone = zone,
@@ -40,7 +41,7 @@ class:bindHook("GameOptions:generateList", function(self, data)
                                 return tostring(config.settings.tome.ascii_border_style):capitalize()
                         end,
                         fct = function(item)
-                                local list = {{name="Default", style="default"}, {name="Thick", style="thick"}, {name="Thin", style="thin"}}
+                                local list = {{name="Official", style="official"}, {name="Thick", style="thick"}, {name="Thin", style="thin"}}
                                 engine.ui.Dialog:listPopup("Ascii border style", "Select style", list, 300, 200, function(sel)
                                         if not sel or not sel.style then return end
                                         config.settings.tome.ascii_border_style = sel.style

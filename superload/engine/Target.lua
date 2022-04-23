@@ -12,8 +12,8 @@ function _M:init(map, source_actor)
         -- superloaded code
         local style = config.settings.tome.ascii_border_style
 
-        if style == "default" then
-                self.cursor = engine.Tiles:loadImage("target_cursor_default.png"):glTexture()
+        if style == "official" then
+                self.cursor = engine.Tiles:loadImage("target_cursor_official.png"):glTexture()
         end
         if style == "thick" then
                 self.cursor = engine.Tiles:loadImage("target_cursor_thick.png"):glTexture()
