@@ -1,9 +1,25 @@
 local Dialog = require "engine.ui.Dialog"
 local Textzone = require "engine.ui.Textzone"
+local Map = require "engine.Map"
 
 -- Initialize setting on addon load
 class:bindHook("ToME:load", function(self, data)
         config.settings.tome.ascii_border_style = config.settings.tome.ascii_border_style or "thick"
+
+        local style = config.settings.tome.ascii_border_style
+
+        if style == "default" then
+                Map.faction_danger2 = "tactical_danger_default.png"
+                Map.faction_danger1 = "tactical_enemy_strong_default.png"
+        end
+        if style == "thick" then
+                Map.faction_danger2 = "tactical_danger_thick.png"
+                Map.faction_danger1 = "tactical_enemy_strong_thick.png"
+        end
+        if style == "thin" then
+                Map.faction_danger2 = "tactical_danger_thin.png"
+                Map.faction_danger1 = "tactical_enemy_strong_thin.png"
+        end
 end)
 
 -- Ascii border style menu option
