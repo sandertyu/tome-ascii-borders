@@ -1,7 +1,7 @@
 long_name = "ASCII Tactical Borders"
 short_name = "ascii-borders" 
 for_module = "tome"
-version = {1,7,4}
+version = {1,7,5}
 addon_version = {2,0,1}
 weight = 1000
 author = {'lowfye'}
